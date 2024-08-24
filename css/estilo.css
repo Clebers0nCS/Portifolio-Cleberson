@@ -2,7 +2,7 @@
 @import url('colors.css');
 
 html {
-    scroll-behavior: smooth; /* Ativa a scrollagem suave */
+    scroll-behavior: smooth; 
 }
 
 body {
@@ -10,13 +10,45 @@ body {
 }
 
 section {
-    scroll-margin-top: 80px; /* Define a margem de scroll para o topo das seções */
+    min-height: 10vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-margin-top: 0; 
+    scroll-padding-top: 0; 
 }
+
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding-top: 80px;
+    width: 100%;
+    max-width: 1200px; 
+    margin: 4.5rem;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
 }
+
+
+.menuInicio {
+    width: 100%;
+    height: 30px;
+    padding: 2%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--fundo-cor);
+    z-index: 1000;
+}
+
+.menuInicio ul {
+    display: flex;
+    gap: 6%;
+    list-style: none;
+    text-align: center;
+    justify-content: center;
+}
+
 
 .menuInicio {
     width: 100%;
@@ -121,12 +153,13 @@ section {
 }
 
 .sobremim {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     width: 100%;
-    margin-top: 3%;
-    height: auto;
+    height: 90vh;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
     background-color: #A9907E;
     border-radius: 10px;
 }
@@ -146,9 +179,12 @@ section {
 
 #projetos {
     width: 100%;
-    height: auto;
-    margin-top: 80px;
-    
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+    padding: 20px;
 }
 
 .conteudoprojetos {
@@ -207,7 +243,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 25rem;
+    height: 90vh;
 }
 
 #habilidades h3 {
@@ -222,7 +258,7 @@ section {
     display: flex;
     align-items: center;
     width: 100%;
-    height: 100%;
+    height: 60%;
     background-color: var(--fundo-cor);
     border-radius: 10px;
 }
@@ -252,4 +288,98 @@ section {
     text-align: justify;
     padding: 0.5rem;
     transition: opacity 0.3s;
+}
+
+#contato{ 
+    display: flex;
+    justify-content: center;
+    padding: 10px 45px;
+    margin: 2rem;
+    width: 100%;
+}
+
+.formulario {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.formulario h3 {
+    color: var(--cor-texto);
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin: 2rem;
+}
+
+form label {
+    color: var(--cor-texto);
+    font-size: 17px;
+    margin-bottom: 4px;
+}
+
+form input {
+    padding: 15px;
+    outline: none;
+    border: 0;
+    margin-bottom: 20px;
+    font-size: 15px;
+    transition: all 0.5s;
+}
+
+form input:focus{
+    border-radius: 16px;
+}
+
+form textarea {
+    padding: 10px;
+    outline: none;
+    border: 0;
+    font-size: 15px;
+    margin-bottom: 30px;
+    transition: all 0.5s;
+}
+
+form textarea:focus{
+    border-radius: 16px;
+}
+
+form button {
+    padding: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    background: transparent;
+    border: 2px solid var(--cor-texto);
+    color: var(--cor-texto);
+    transition: all 1s;
+    margin-bottom: 20px; 
+}
+
+form button:hover{
+    background: var(--cor-texto);
+    color: var(--cor-hover);
+    border-radius: 16px;
+}
+
+footer {
+    width: 100%;
+    height: 10vh;
+    background-color: var(--fundo-cor);
+}
+
+footer span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    font-size: 16px;
+    color: var(--cor-texto);
+    font-family: Montserrat;
+    font-weight: 700;
 }

@@ -23,8 +23,8 @@
         <ul>
           <li><a href="#sobre-mim">Sobre mim</a></li>
           <li><a href="#projetos">Projetos</a></li>
-          <li><a href="#">Habilidades</a></li>
-          <li><a href="#"> Contato</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#contato"> Contato</a></li>
         </ul>
       </nav>
     </header>
@@ -87,7 +87,7 @@
                 <li><a href="#"><img src="/imagem/arcano-site.png" alt=""></a></li>
               </ul>
             </div>
-            <div class="vejaprojetos"><a href="#">Veja mais</a></div>
+            <div class="vejaprojetos"><a href="https://github.com/Clebers0nCS" target="_blank">Veja mais</a></div>
         </div>
       </section>
 
@@ -96,16 +96,33 @@
         <div class="areaHabilidades">
           <div class="imgsHabilidades">
               <img src="/imagem/java-script.png" alt="javascript" class="habilidade" data-descricao ="Tenho uma sólida compreensão das habilidades básicas em JavaScript, incluindo manipulação de variáveis, criação de funções, uso de loops e interação com o DOM para adicionar interatividade a páginas web. Essas competências me permitem desenvolver funcionalidades dinâmicas e responsivas em projetos front-end.">
-              <img src="/imagem/github-sign.png" alt="github" class="habilidade" data-descricao="habilidadeGH">
-              <img src="/imagem/photoshop.png" alt="javascript" class="habilidade" data-descricao="habilidadeJS">
+              <img src="/imagem/github-sign.png" alt="github" class="habilidade" data-descricao="Tenho experiência em utilizar o GitHub para gerenciamento de projetos e versionamento de código. Sei como criar repositórios, fazer commits, trabalhar com branches, e colaborar em projetos por meio de pull requests. Além disso, entendo os principais comandos Git para sincronizar o código local com o repositório remoto, garantindo um fluxo de trabalho eficiente e organizado.">
+              <img src="/imagem/photoshop.png" alt="javascript" class="habilidade" data-descricao="Tenho conhecimento em Photoshop e sei utilizar as principais ferramentas do software para criação e edição de imagens. Compreendo técnicas de manipulação de camadas, ajuste de cores, e edição de fotos, além de criar designs gráficos e composições visuais de forma profissional.">
           </div>
           <div class="descricaoHabilidades">
               <p id="descricaoTexto"></p>
           </div>
         </div>
       </section>
+      
+      <section id="contato">
+        <div class="formulario">
+          <h3>Contato</h3>
+          <form action="https://api.staticforms.xyz/submit" method="post">
+            <label for="">Nome</label>
+            <input type="text" name="name" placeholder="Digite o seu nome"outocomplete="off">
+            <label for="">E-mail</label>
+            <input type="text" name="email" placeholder="Digite o seu e-mail" outocomplete="off">
+            <label for="">Mensagem</label>
+            <textarea name="message" cols="30" rows="10" placeholder="Digite sua mensagem" id=""></textarea>
+            <button type="submit">Enviar</button>
 
-      <footer></footer>
+            <input type="hidden" name="accessKey" value="d951e98d-9f17-4c8c-b4dd-5f7324d04061">
+            <input type="hidden" name="redirectTo" value="http://127.0.0.1:5501/index.html#habilidades">
+          </form>
+        </div>
+      </section>
     </div>
+    <footer><span>Site criado por Cleberson Corrêa</span></footer>
   </body>
 </html>
